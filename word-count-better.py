@@ -15,3 +15,4 @@ for word, count in wordCounts.items():
     cleanWord = word.encode('ascii', 'ignore')
     if (cleanWord):
         print(cleanWord.decode() + " " + str(count))
+
