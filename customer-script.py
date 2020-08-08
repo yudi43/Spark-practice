@@ -20,13 +20,6 @@ input = sc.textFile('file:////home/yudi/workspace/Spark-practice/customer-orders
 mappedInput = input.map(extractCustomerPricePairs)
 
 totalByCustomer = mappedInput.reduceByKey(lambda x, y: x + y)
-
 results = totalByCustomer.collect()
-
-
 for result in results:
     print(result)
-
-
-
-
