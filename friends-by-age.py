@@ -1,5 +1,7 @@
 from pyspark import SparkConf, SparkContext
 #this is a useless comment
+
+#yet another useless comment
 conf = SparkConf().setMaster("local").setAppName("FriendsByAge")
 sc = SparkContext(conf = conf)
 
